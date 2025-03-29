@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Account Manager</title>
+</head>
+
+<body>
+    <div class="bank-app">
+        <h1>🏦 Bank Account Manager</h1>
+
+        <div class="account-controls" id="accountControls">
+            <div class="form-group">
+                <label for="accountName">Account Holder:</label>
+                <input type="text" id="accountName" placeholder="Your name">
+            </div>
+
+            <button id="createAccountBtn" onclick="createAccount()">Create Account</button>
+        </div>
+
+        <div class="account-dashboard hidden">
+            <h2>Welcome, <span id="displayName"></span>!</h2>
+            <p class="balance">Balance: $<span id="displayBalance">0</span></p>
+
+            <div class="transaction-form">
+                <input type="number" id="amountInput" placeholder="Amount" min="0">
+                <div class="button-group">
+                    <button id="depositBtn" onclick="Deposit()">Deposit</button>
+                    <button id="withdrawBtn" onclick="Withdraw()">Withdraw</button>
+                </div>
+                <p id="InsufficientMessage"></p>
+            </div>
+
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <ul id="transactionList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

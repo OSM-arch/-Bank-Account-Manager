@@ -1,0 +1,142 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bank-app {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Controls */
+.account-controls,
+.account-dashboard {
+    transition: all 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+#depositBtn {
+    background: #2ecc71;
+}
+
+#depositBtn:hover {
+    background: #27ae60;
+}
+
+#withdrawBtn {
+    background: #e74c3c;
+}
+
+#withdrawBtn:hover {
+    background: #c0392b;
+}
+
+/* Account Dashboard */
+.account-dashboard h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.balance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #16a085;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Transaction History */
+.transaction-history {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.transaction-history h3 {
+    color: #34495e;
+}
+
+#transactionList {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#transactionList li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #7f8c8d;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+#InsufficientMessage {
+    text-align: center;
+    font-weight: bold;
+    color: #c40404;
+}
