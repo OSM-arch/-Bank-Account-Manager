@@ -42,9 +42,3 @@
 <h2>🚀 Setup</h2>
 <pre><code>git clone https://github.com/OSM-arch/-Bank-Account-Manager.git
 open index.html</code></pre>
-
-<h2>📸 Preview</h2>
-<!-- Add screenshot here if available -->
-<p align="center">
-  <img src="preview.jpg" width="500" alt="UI Preview">
-</p>
